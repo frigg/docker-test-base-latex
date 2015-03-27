@@ -19,6 +19,6 @@ ENV LC_ALL en_US.UTF-8
 
 RUN wget http://mirrors.ctan.org/support/texcount/texcount.pl -O /usr/local/bin/texcount && chmod +x /usr/local/bin/texcount
 
-ADD worker.yaml /etc/frigg/config.yaml
+COPY worker.yaml /etc/frigg/config.yaml
 
 CMD ["frigg-worker"]
