@@ -9,6 +9,11 @@ docker build -t frigg-worker-latex .
 docker run -t frigg-worker-latex
 ```
 
+### Installed tools
+* texlive-full
+* texcount
+* poppler-utils (pdfinfo)
+
 ----------------------
 
 MIT © frigg.io
