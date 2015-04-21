@@ -1,3 +1,8 @@
 tasks:
  - npm install dockerlint
  - node_modules/.bin/dockerlint -f Dockerfile
+ - docker build -t test-base-latex .
+ - docker run test-base-latex pdflatex --help
+
+services:
+ - docker
